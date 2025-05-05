@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+  <title>Nordé</title>
+</head>
+<body>
+    <header class="nempresa">
+        <h1 class="nomedaem">NORDÈ</h1>
+        <h4>Sinta o Nordeste de verdade</h4>
+       <div class="imagenlogo">
+        <img src="./Imagem/Logo/logo.png" >
+       </div> 
+    </header>
+    <nav>
+      <div class="menu">
+        <a href="./index.html" class="item">INICIO</a>
+        <a href="./Pacotes.html" class="item">PACOTES</a>
+        <a href="./Precos.html" class="item">PREÇOS</a>
+        <a href="./Duvidas.html" class="item">DUVIDAS</a>
+    </div>
+    </nav>
+    <div class="container">
+        <div class="boxImagem">
+          <img src="./Imagem/destinos/rio/br.jpg" alt="Logo da NORDÉ">
+        </div>
+        <section class="busca-pacotes">
+            <h2>Encontre seu Pacote de Viagem</h2>
+            <form id="form-pacote">
+              <div class="form-campo">
+                <label for="origem">Origem:</label>
+                <input type="text" id="origem" name="origem" readonly placeholder="Detectando...">
+              </div>
+              <div class="form-campo">
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" placeholder="Ex: Salvador" required>
+              </div>
+              <div class="form-campo">
+                <label for="data-ida">Ida:</label>
+                <input type="date" id="data-ida" name="data-ida" required>
+              </div>
+              <div class="form-campo">
+                <label for="data-volta">Volta:</label>
+                <input type="date" id="data-volta" name="data-volta" required>
+              </div>
+              <div class="form-campo">
+                <label for="quartos">Quartos:</label>
+                <select id="quartos" name="quartos">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="form-campo">
+                <button type="submit">Buscar</button>
+              </div>
+            </form>
+          </section>
+          
+          <script>
+            navigator.geolocation.getCurrentPosition(
+              function(position) {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+          
+                // Simulação de localização para fins de demonstração
+                const aeroportoProximo = "Aeroporto Internacional de Salvador (SSA)";
+                document.getElementById("origem").value = aeroportoProximo;
+          
+                // Se quiser integrar API real, substitua esse valor com base em coordenadas.
+              },
+              function(error) {
+                document.getElementById("origem").value = "Não foi possível detectar.";
+              }
+            );
+          </script>
+                 
+</body>
+</html>

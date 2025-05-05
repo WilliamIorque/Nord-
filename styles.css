@@ -1,0 +1,143 @@
+.nempresa {
+  color: white;
+  background-color:  rgb(0, 146, 196);
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 20px; /* Adiciona um pouco de espaço em volta */
+}
+
+.nomedaem {
+  font-size: 36px; /* Ajuste o tamanho do texto conforme necessário */
+  margin-bottom: 10px; /* Espaçamento entre o título e o slogan */
+}
+
+h4 {
+  font-size: 18px; /* Ajuste o tamanho do texto conforme necessário */
+  margin-bottom: 20px; /* Espaçamento entre o slogan e a imagem */
+}
+
+.imagenlogo img {
+  max-width: 100%; /* Ajusta a imagem para o tamanho máximo da largura */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+    .boxImagem {
+        display: flex;
+        align-items: center; /* Alinha verticalmente */
+        gap: 20px; /* Espaço entre a imagem e o texto */
+        padding: 20px;
+        justify-content: flex-start; /* Garante que a imagem fique no canto esquerdo */
+      }
+      .imagenlogo img {
+        width: 120px; /* Ajuste conforme necessário */
+        height: auto;
+        background-color: white; /* Fundo branco ao redor da imagem */
+        padding: 10px; /* Espaçamento interno */
+        border-radius: 8px; /* Cantos arredondados */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      }
+      
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+      }
+      
+      .boxImagem img {
+        width: 300px;
+        height: auto;
+        display: flex;
+      
+      }
+      
+      .quemsomos {
+        max-width: 800px;
+        line-height: 1.6;
+        font-family: Arial, sans-serif;
+      }
+   /* Estiliza o contêiner do menu */
+.menu {
+  background-color: rgba(245, 143, 17, 1); /* Cor de fundo do menu */
+  box-sizing: border-box;                  /* Inclui padding e borda no cálculo da largura/altura */
+  width: 100vw;                            /* Largura igual à largura da janela de visualização */
+  display: flex;                           /* Utiliza Flexbox para layout flexível */
+  justify-content: space-evenly;           /* Distribui os itens com espaçamento igual entre eles */
+  padding: 10px 0;                     /* Espaçamento interno superior e inferior de 10px */
+}
+
+/* Estiliza cada item do menu */
+.item {
+  background-color: rgba(245, 143, 17, 1); /* Cor de fundo igual à do menu por padrão */
+  margin: 10px;                            /* Margem externa de 10px em todos os lados */
+  color: rgb(248, 248, 248);               /* Cor do texto (quase branco) */
+  font-size: 22px;                         /* Tamanho da fonte de 22px */
+  text-align: center;                      /* Alinha o texto ao centro */
+  border-radius: 5px;                      /* Cantos arredondados com raio de 5px */
+  width: 100px;                            /* Largura fixa de 100px */
+  height: auto;                            /* Altura automática conforme o conteúdo */
+  transition: background-color 0.3s ease;  /* Transição suave da cor de fundo em 0.3s */
+  cursor: pointer;                         /* Cursor muda para ponteiro ao passar o mouse */
+  padding: 10px 0;
+  text-decoration: none;                         /* Espaçamento interno superior e inferior de 10px */
+}
+
+/* Estiliza o item do menu quando o mouse está sobre ele */
+.item:hover {
+  background-color: rgb(0, 146, 196);      /* Altera a cor de fundo para azul ao passar o mouse */
+}
+.busca-pacotes {
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.busca-pacotes h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #005b8f;
+}
+
+#form-pacote {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.form-campo {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.form-campo label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-campo input,
+.form-campo select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-campo button {
+  padding: 12px 20px;
+  background-color: rgba(245, 143, 17, 1);
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-campo button:hover {
+  background-color: rgb(0, 146, 196);
+}
